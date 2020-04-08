@@ -6,220 +6,169 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
 html {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: #777;
-    padding: 3rem;
-    box-sizing: border-box;
-}
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
 
 .header {
-    height: 95vh;
-    position: relative;
-    background-image: linear-gradient(
-            to right bottom,
-            rgba(128, 214, 113, 0.8),
-            rgba(39, 180, 133, 0.8)
-        ),
-        url(../img/hero.jpg);
-    background-size: cover;
-    background-position: top;
-
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-}
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
 
 .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
 
 .header__logo {
-    height: 3.5rem;
-}
+  height: 3.5rem; }
 
 /* .logo:hover {
     animation: rotateClock 500ms ease-out 1;
 } */
-
 .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-}
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
 
 .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveToRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-    /*
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveToRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  /*
     animation-delay: 3s;
     animation-iteration-count: 3;
-     */
-}
+     */ }
 
 .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.6rem;
-    animation: moveToLeft 1s ease-out;
-    /* animation-name: moveToLeft;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.6rem;
+  animation: moveToLeft 1s ease-out;
+  /* animation-name: moveToLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out; */
-}
+    animation-timing-function: ease-out; */ }
 
 @keyframes moveToRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        opacity: 0.2;
-        transform: translateX(2rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    opacity: 0.2;
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 @keyframes moveToLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        opacity: 0.2;
-        transform: translateX(-2rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    opacity: 0.2;
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 @keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    /* 80% {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  /* 80% {
         opacity: 0.2;
         transform: translateX(-20px);
     } */
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 @keyframes rotateClock {
-    0% {
-        opacity: 1;
-        transform: rotate(0);
-    }
-
-    50% {
-        opacity: 0;
-        transform: rotate(120deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(360deg);
-    }
-}
+  0% {
+    opacity: 1;
+    transform: rotate(0); }
+  50% {
+    opacity: 0;
+    transform: rotate(120deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg); } }
 
 .flex {
-    display: flex;
-}
+  display: flex; }
 
 .btn:link,
 .btn:visited {
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-}
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative; }
 
 .btn:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+  transform: translateY(-0.3rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
 
 .btn:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
+  transform: translateY(-0.1rem);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
 
 .btn--white {
-    background: #fff;
-    color: #777;
-}
+  background: #fff;
+  color: #777; }
 
 .btn::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-}
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
 
 .btn--white::after {
-    background-color: #fff;
-}
+  background-color: #fff; }
 
 .btn:hover::after {
-    transform: scaleX(1.6) scaleY(1.4);
-    opacity: 0;
-}
+  transform: scaleX(1.6) scaleY(1.4);
+  opacity: 0; }
 
 .btn--animate {
-    animation: moveUp 0.5s ease-out 1.5s;
-    animation-fill-mode: backwards;
-}
+  animation: moveUp 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards; }
