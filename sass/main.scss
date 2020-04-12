@@ -9,12 +9,8 @@
 
 @import "components/button.scss";
 
+// layouts
 @import "layout/header";
-
-@import "base/typo";
+@import "layout/grid";
 
 @import "pages/home";
-
-// .flex {
-//     display: flex;
-// }
