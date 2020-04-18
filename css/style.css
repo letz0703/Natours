@@ -97,10 +97,14 @@ body {
   font-weight: 700;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  letter-spacing: 2px; }
 
 .u-text-center {
   text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -178,7 +182,7 @@ body {
     display: table;
     clear: "both"; }
   .row [class*="col-"] {
-    background-color: red;
+    background-color: transparent;
     float: left; }
     .row [class*="col-"]:not(:last-child) {
       margin-right: 6rem; }
