@@ -7,10 +7,11 @@
 @import "base/typo";
 @import "base/utilities";
 
-@import "components/button.scss";
+@import "components/button";
 
 // layouts
 @import "layout/header";
 @import "layout/grid";
+@import "layout/box";
 
 @import "pages/home";
