@@ -1,7 +1,8 @@
 .row {
     max-width: $grid-width;
-    background-color: $bg-grey;
+    // background-color: $bg-grey;
     margin: 0 auto;
+    text-align: center;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -11,11 +12,11 @@
 
     [class*="col-"] {
         background-color: transparent;
-
-        float: left;
+        display: inline-block;
         &:not(:last-child) {
-            margin-right: $gutter-horizontal;
+            margin-right: 3rem;
         }
+        // float: left;
     }
 
     .col-1-of-2 {
