@@ -2,7 +2,7 @@
     max-width: $grid-width;
     // background-color: $bg-grey;
     margin: 0 auto;
-    text-align: center;
+    // text-align: center;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -10,13 +10,14 @@
 
     @include clearfix;
 
-    [class*="col-"] {
+    [class^="col-"] {
+        float: left;
+
         background-color: transparent;
         display: inline-block;
         &:not(:last-child) {
-            margin-right: 3rem;
+            margin-right: $gutter-horizontal;
         }
-        // float: left;
     }
 
     .col-1-of-2 {
