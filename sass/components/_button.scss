@@ -8,6 +8,7 @@
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
+        font-size: 1.4rem;
     }
 
     &:hover {
@@ -29,6 +30,14 @@
         color: $color-grey-dark;
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background: $color-primary;
+        color: $color-white;
+        &::after {
+            background-color: $color-primary;
         }
     }
 
